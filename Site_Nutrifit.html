@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit & Nutrition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(
+                rgba(255, 255, 255, 0.9),
+                rgba(19, 255, 239, 0.8)
+            ), url('https://i.pinimg.com/736x/a3/72/15/a3721501e70835f879e2ab7b2dae903c.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+		.container {
+			max-width: 1000px; /* Adjust width as needed */
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap; /* Ensures responsiveness */
+			justify-content: space-evenly; /* Centers content */
+			gap: 20px; 
+}
+
+		.card {
+			flex: 1;
+			min-width: 250px; 
+			max-width: 300px; 
+			min-height: 450px;
+			text-align: center;
+			background: white;
+            padding: 20px;
+            margin: 50px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+		.card:hover {
+			transform: scale(1.05); 
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+		.card:active {
+			transform: scale(0.98); 
+}
+        .button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NutriFit</h1>
+        <img src="logo.png" alt="Fit & Nutrition Logo" style="width: 228px; height: 228px;">
+        <p>Your Path to a Healthier Life</p>
+        <p><strong>NutriFit, echilibrul perfect între fitness și nutriție</strong></p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Personalized Fitness Plans</h2>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ4c3lcEvYyUj5d09KrarZvqzQyhscRG3c-A&s" alt="Fitness Plan" style="width: 100%; max-height: 150px; border-radius: 8px;">
+            <p>Custom workouts tailored to your goals and fitness level.</p>
+			<a href="fitness-plans.html" class="button">Get Started</a>
+        </div>
+        <div class="card">
+            <h2>Specific Lessons Made by Professionals for Each Sport</h2>
+			<img src="https://www.eslecollege.com/wp-content/uploads/2022/07/sports-at-school.png" alt="Sports Lessons" style="width: 100%; max-height: 150px; border-radius: 8px;">
+            <p>Informative videos about specific sports.</p>
+            <a href="lessons.html" class="button">Start Learning</a>
+        </div>
+        <div class="card">
+            <h2>Nutrition Guidance</h2>
+			<img src="https://assets.sweat.com/html_body_blocks/images/000/009/927/original/NutritionDefinition_enb9d1cc7ac2e4031aec72392988db7d86.jpg?1538607034" alt="Healthy Food" style="width: 100%; max-height: 150px; border-radius: 8px;">
+            <p>Meal plans and dietary advice for optimal health.</p>
+            <a href="nutrition.html" class="button">Learn More</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Fit & Nutrition. All rights reserved.</p>
+    </footer>
+</body>
+</html>
