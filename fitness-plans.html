@@ -1,6 +1,104 @@
-<html>
-	<body>
-		<h1>Fitness</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit & Nutrition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(
+				rgba(10, 10, 10, 0.8),
+                rgba(83, 134, 81, 0.9)
+            ), url('https://i.pinimg.com/736x/a3/72/15/a3721501e70835f879e2ab7b2dae903c.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+			color: white;
+        }
+		.container {
+			max-width: 1000px; /* Adjust width as needed */
+			margin: auto;
+			display: flex;
+			flex-wrap: wrap; /* Ensures responsiveness */
+			justify-content: space-evenly; /* Centers content */
+			gap: 20px; 
+}
 
+		.card {
+			flex: 1;
+			min-width: 250px; 
+			max-width: 300px; 
+			min-height: 450px;
+			text-align: center;
+			color: white;
+			background: black;
+            padding: 20px;
+            margin: 50px 0;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+		.card:hover {
+			transform: scale(1.05); 
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+		.card:active {
+			transform: scale(0.98); 
+}
+        .button {
+            display: inline-block;
+            background-color: #538651;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+	.home-button {
+    		position: fixed;
+    		top: 10px;
+    		left: 10px;
+    		z-index: 1000;
+}
+
+	.home-button img {
+   	 	width: 100px;
+    		height: 100px;
+    		cursor: pointer;
+    		transition: transform 0.2s;
+}
+
+	.home-button img:hover {
+    		transform: scale(1.1);
+}
+    .button:hover { background-color: #0a700f; }
+	
+	.cardh1,
+	.card h2, 
+	.card p, 
+	.card a {
+		color: white; 
+}
+		
+	footer {
+		margin-top: 50px;
+		font-size: 14px;
+		opacity: 0.8;
+		color: white; /* Ensures footer text is white */
+}
+    </style>
+</head>
+<body>
+    <header>
+	<a href="Site_Nutrifit.html" class="home-button">
+    		<img src="home-icon.png" alt="Home">
+	</a>    
+        <h1>Fitness Plans</h1>
+        <p>&copy; 2025 Fit & Nutrition. All rights reserved.</p>
+    </footer>
+</body>
 </html>
